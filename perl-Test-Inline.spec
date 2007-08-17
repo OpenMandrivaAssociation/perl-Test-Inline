@@ -1,6 +1,6 @@
 %define module Test-Inline
 %define name    perl-%{module}
-%define version 2.201
+%define version 2.205
 %define release %mkrel 1
 
 Name:           %{name}
@@ -14,20 +14,22 @@ Source:         http://www.cpan.org/modules/by-module/Test/%{module}-%{version}.
 %if %{mdkversion} < 1010
 BuildRequires:  perl-devel
 %endif
-BuildRequires:  perl(Test::More) >= 0.47
+BuildRequires:  perl-prefork
 BuildRequires:  perl(File::Spec) >= 0.82
-BuildRequires:  perl(List::Util) >= 1.11
-BuildRequires:  perl(Getopt::Long) >= 2.34
 BuildRequires:  perl(File::Slurp) >= 9999.04
 BuildRequires:  perl(File::Find::Rule) >= 0.26
-BuildRequires:  perl(Class::Autouse) >= 1.15
-BuildRequires:  perl(Algorithm::Dependency) >= 1.02
-BuildRequires:  perl(Test::ClassAPI) >= 1.02
-BuildRequires:  perl(Config::Tiny) >= 2.00
 BuildRequires:  perl(File::Flat) >= 0.95
 BuildRequires:  perl(File::Remove)
-BuildRequires:  perl-prefork
+BuildRequires:  perl(File::chmod)
+BuildRequires:  perl(List::Util) >= 1.11
+BuildRequires:  perl(Getopt::Long) >= 2.34
+BuildRequires:  perl(Class::Autouse) >= 1.15
+BuildRequires:  perl(Algorithm::Dependency) >= 1.02
+BuildRequires:  perl(Config::Tiny) >= 2.00
 BuildRequires:  perl(Pod::Tests) >= 0.18
+BuildRequires:  perl(Test::More) >= 0.47
+BuildRequires:  perl(Test::Script)
+BuildRequires:  perl(Test::ClassAPI) >= 1.02
 BuildArch:      noarch
 BuildRoot:      %{_tmppath}/%{name}-%{version}
 
