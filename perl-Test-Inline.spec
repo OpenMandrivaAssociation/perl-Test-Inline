@@ -31,7 +31,6 @@ BuildRequires:  perl(Test::More) >= 0.47
 BuildRequires:  perl(Test::Script)
 BuildRequires:  perl(Test::ClassAPI) >= 1.02
 BuildArch:      noarch
-BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
 Embedding tests allows tests to be placed near the code it's
