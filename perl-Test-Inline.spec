@@ -1,13 +1,14 @@
 %define module Test-Inline
+%define upstream_version 2.213
 
 Name:		perl-%{module}
-Version:	2.212
-Release:	2
+Version:	%perl_convert_version %{upstream_version}
+Release:	1
 Summary:	Inlining your tests next to the code being tested
 License:	GPL or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{module}
-Source:		http://www.cpan.org/modules/by-module/Test/%{module}-%{version}.tar.bz2
+Source:		http://www.cpan.org/modules/by-module/Test/Test-Inline-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl-prefork
@@ -34,7 +35,7 @@ testing. This is a nice supplement to the traditional .t files.
 It's like XUnit, Perl-style.
 
 %prep
-%setup -q -n %{module}-%{version} 
+%setup -q -n %{module}-%{upstream_version} 
 
 %build
 chmod 644 Changes README
@@ -132,4 +133,5 @@ make test
 
 * Fri Jul 15 2005 Oden Eriksson <oeriksson@mandriva.com> 0.16-1mdk
 - initial Mandriva package
+
 
