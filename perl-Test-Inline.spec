@@ -3,7 +3,7 @@
 
 Name:		perl-%{module}
 Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Release:	3
 Summary:	Inlining your tests next to the code being tested
 License:	GPL or Artistic
 Group:		Development/Perl
