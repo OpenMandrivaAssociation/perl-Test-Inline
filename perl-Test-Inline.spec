@@ -7,7 +7,7 @@ Release:	3
 Summary:	Inlining your tests next to the code being tested
 License:	GPL or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{module}
+Url:		https://search.cpan.org/dist/%{module}
 Source:		http://www.cpan.org/modules/by-module/Test/Test-Inline-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
