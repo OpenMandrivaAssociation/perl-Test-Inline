@@ -1,14 +1,14 @@
 %define module Test-Inline
-%define upstream_version 2.213
+%define upstream_version 2.214
 
 Name:		perl-%{module}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	1
 Summary:	Inlining your tests next to the code being tested
 License:	GPL or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{module}
-Source:		http://www.cpan.org/modules/by-module/Test/Test-Inline-%{upstream_version}.tar.gz
+Url:		https://github.com/karenetheridge/Test-Inline
+Source:		https://cpan.metacpan.org/authors/id/E/ET/ETHER/Test-Inline-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
